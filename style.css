@@ -16,3 +16,20 @@ body {
     top center
     /cover;
 }
+
+#container {
+  width: 360px;
+  height: 712px;
+  margin: auto;
+
+  /* borda temporária */
+  border: 1px solid blue;
+}
+
+#profile {
+  text-align: center;
+}
+
+#profile img {
+  width: 112px;
+}
