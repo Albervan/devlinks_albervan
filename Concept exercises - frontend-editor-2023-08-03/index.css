@@ -1,0 +1,53 @@
+/* Exemplo de definição do CSS */
+header {
+  border: 1px solid red;
+  padding: 60px;
+}
+
+h1 {
+  border: 2px solid powderblue;
+  height: 60px;
+}
+
+body {
+  background: gray;
+}
+
+p {
+  color: Red;
+  color: blue;
+
+  margin: 20px;
+  border: 1px solid greenyellow;
+}
+
+#pID {
+  color: yellow
+}
+
+.pClass {
+  color: aqua;
+}
+
+span {
+  border: 1px solid purple;
+  display: block;
+  /*display: inline; --Default desse elemento*/
+}
+
+div {
+  border: 1px solid khaki;
+}
+
+/* Teste de Especificidade
+#pDef {
+  color: brown;
+}
+*/
+
+img {
+  width: 500px;
+  margin: 20px;
+  border: 3px dashed gainsboro;
+  padding: 5px;
+}
