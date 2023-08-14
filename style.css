@@ -84,12 +84,17 @@ body * {
   transform: translateY(-50%);
   /* Definir, com base na nova posição original o centro "absoluto" */
   top: 50%;
+
+  animation: switch-slide-def 0.2s;
 }
 
 /* Uma maneira de validar a mudança de posição do switch */
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: switch-slide-light 0.2s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -179,5 +184,24 @@ footer {
 
   .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
+}
+
+/* Criar animações */
+@keyframes switch-slide-light {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes switch-slide-def {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
